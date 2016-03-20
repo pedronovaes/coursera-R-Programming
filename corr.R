@@ -9,7 +9,7 @@ corr <- function(directory, threshold = 0){
     
     ## GOAL: return a numeric vector of correlations
     
-    dir <- paste("/home/pedro/Documentos/teste-r/", directory, sep = "")
+    dir <- paste("/home/pedro/Documentos/coursera-R-Programming/", directory, sep = "")
     setwd(dir)
     complete_table <- complete("specdata", 1:332)
     ids <- complete_table$id[complete_table$nobs > threshold]
